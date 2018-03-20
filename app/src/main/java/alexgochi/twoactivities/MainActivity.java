@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mMessageEditText = (EditText) findViewById(R.id.editText_main);
-        mReplyHeadTextView = (TextView) findViewById(R.id.text_header_reply);
-        mReplyTextView = (TextView) findViewById(R.id.text_message_reply);
+        mMessageEditText = findViewById(R.id.editText_main);
+        mReplyHeadTextView = findViewById(R.id.text_header_reply);
+        mReplyTextView = findViewById(R.id.text_message_reply);
 
 //        mButton = (Button) findViewById(R.id.clear_button);
     }
