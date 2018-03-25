@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText mMessageEditText;
     private TextView mReplyHeadTextView;
     private TextView mReplyTextView;
-//    private Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
         mMessageEditText = findViewById(R.id.editText_main);
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
-
-//        mButton = (Button) findViewById(R.id.clear_button);
     }
 
     public void launchSecondActivity(View view) {
@@ -43,15 +40,6 @@ public class MainActivity extends AppCompatActivity {
         else {
             mMessageEditText.setHint(R.string.editText_main);
         }
-//        intent.putExtra(EXTRA_MESSAGE, message);
-//        startActivityForResult(intent, TEXT_REQUEST);
-
-//        mButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                mMessageEditText.getText().clear();
-//            }
-//        });
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -69,8 +57,4 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-//    public void delete_text(View view) {
-//        mMessageEditText.getText().clear();
-//    }
 }

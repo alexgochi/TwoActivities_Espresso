@@ -39,17 +39,6 @@
         android:background="@drawable/oval_shape"
         android:onClick="returnReply"
         android:text="@string/button_second" />
-        <!--android:layout_marginBottom="@dimen/margin_up"-->
-
-    <!--<Button-->
-        <!--android:id="@+id/clear_button"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_alignParentEnd="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:background="@drawable/oval_shape2"-->
-        <!--android:text="@string/clear" />-->
 
     <EditText
         android:id="@+id/editText_second"

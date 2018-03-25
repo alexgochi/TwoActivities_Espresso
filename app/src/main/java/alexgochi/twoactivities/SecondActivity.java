@@ -17,19 +17,12 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         mReply = (EditText) findViewById(R.id.editText_second);
-//        Button mButton = (Button) findViewById(R.id.clear_button);
+
         Intent intent = getIntent();
 
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = (TextView) findViewById(R.id.text_message);
         textView.setText(message);
-
-//        mButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                mReply.getText().clear();
-//            }
-//        });
     }
 
     public void returnReply(View view) {
