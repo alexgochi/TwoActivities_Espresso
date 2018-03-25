@@ -1,8 +1,5 @@
 package alexgochi.twoactivities;
 
-
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -17,7 +14,6 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
-import static junit.framework.Assert.assertEquals;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -42,11 +38,5 @@ public class ActivityInputOutputTest {
         onView(withId(R.id.editText_main)).perform(typeText("This is a test."));
         onView(withId(R.id.button_main)).perform(click());
         onView(withId(R.id.text_message)).check(matches(withText("This is a test.")));
-    }
-    @Test
-    public void useAppContext() throws Exception {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getTargetContext();
-        assertEquals("alexgochi.twoactivities", appContext.getPackageName());
     }
 }
